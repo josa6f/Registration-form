@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Registration Form</h1>
+    <P>Please fill out this form with the required information</P>
+    <form action="https://register-demo.freecodecamp.org" method="post"> <!--method especifica como enviar los datosdel formulario-->
+        <fieldset>
+            <label for="first-name">Enter Your First Name: <input type="text" id="first-name" required></label> <!--type es para que el navegador sepa que tipo de dato va a recibir-->
+            <label for="last-name">Enter Your Last Name: <input type="text" id="last-name" required></label><!--for y id es para identificar el label y el input-->
+            <label for="email">Enter Your Email: <input type="email" id="email" required></label>
+            <label for="new-password">Create Your Password: <input type="password" id="new-password" required pattern="[a-z0-5]{8,}"></label> <!--required es campo requerido y minilength es el minimo de caracteres, pattern para regular la contraseña-->
+        </fieldset><!--organiza en grupos los campos de un formulario-->
+        <fieldset>
+            <label for=""></label>
+            <label for=""></label>
+            <label for="
+            "></label>
+        </fieldset>
+        <fieldset></fieldset>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
