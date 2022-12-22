@@ -18,12 +18,23 @@
             <label for="new-password">Create Your Password: <input type="password" id="new-password" required pattern="[a-z0-5]{8,}"></label> <!--required es campo requerido y minilength es el minimo de caracteres, pattern para regular la contraseña-->
         </fieldset><!--organiza en grupos los campos de un formulario-->
         <fieldset>
-            <label for=""></label>
-            <label for=""></label>
-            <label for="
-            "></label>
+            <label for="personal-account">Personal Account <input type="radio" name="account-type" id="personal-account"> Peronal Account</label> <!--name es para relacionar los radios-->
+            <label for="business-account">Business Account <input type="radio" name="account-type" id="business-account"> Business Account</label>
+            <label for="terms-and-condition"><input type="checkbox" required id="terms-and-condition"> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label> 
+            <label for="">Input your age (years): <input type="number" min="13" max="120"></label> <!--min es la edad minima y max es la edad maxima-->
+            <label for="">How did you hear about us?
+                <select> <!--Contenedor para un grupo de elementos de option-->
+                    <option value="">(select one)</option>
+                    <option value="1">freCodeCamp News</option><!--para enviar un valor util al servidor-->
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
         </fieldset>
-        <fieldset></fieldset>
+        <fieldset>
+            <label for="">Upload a profile picture<input type="file"></label>
+        </fieldset>
         <input type="submit" value="Submit">
     </form>
 </body>
