@@ -21,9 +21,12 @@
             <label for="personal-account">Personal Account <input type="radio" name="account-type" id="personal-account"> Peronal Account</label> <!--name es para relacionar los radios-->
             <label for="business-account">Business Account <input type="radio" name="account-type" id="business-account"> Business Account</label>
             <label for="terms-and-condition"><input type="checkbox" required id="terms-and-condition"> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label> 
-            <label for="">Input your age (years): <input type="number" min="13" max="120"></label> <!--min es la edad minima y max es la edad maxima-->
-            <label for="">How did you hear about us?
-                <select> <!--Contenedor para un grupo de elementos de option-->
+        </fieldset>
+        <fieldset>
+            <label for="profile-picture">Upload a profile picture<input type="file" id="profile-picture" name="file"></label>    <!--se utiliza for y id para vincular los elementos-->
+            <label for="age">Input your age (years): <input type="number" min="13" max="120" id="age" name="age"></label> <!--min es la edad minima y max es la edad maxima--><!--name es un atributo para identificar el elemento en el envio del formulario-->
+            <label for="referrer">How did you hear about us?
+                <select id="referrer"> <!--Contenedor para un grupo de elementos de option-->
                     <option value="">(select one)</option>
                     <option value="1">freCodeCamp News</option><!--para enviar un valor util al servidor-->
                     <option value="2">freeCodeCamp YouTube Channel</option>
@@ -31,9 +34,7 @@
                     <option value="4">Other</option>
                 </select>
             </label>
-        </fieldset>
-        <fieldset>
-            <label for="">Upload a profile picture<input type="file"></label>
+            <label for="bio">Provide a bio: <textarea name="" id="bio" cols="30" rows="3" placeholder="I like coding on the beach..." name="bio"></textarea> Provide a bio></label> <!--textarea recibe texto multilinea indicas las filas y las columnas-->
         </fieldset>
         <input type="submit" value="Submit">
     </form>
