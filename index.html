@@ -18,9 +18,9 @@
             <label for="new-password">Create Your Password: <input type="password" id="new-password" required pattern="[a-z0-5]{8,}"></label> <!--required es campo requerido y minilength es el minimo de caracteres, pattern para regular la contraseña-->
         </fieldset><!--organiza en grupos los campos de un formulario-->
         <fieldset>
-            <label for="personal-account">Personal Account <input type="radio" name="account-type" id="personal-account"> Peronal Account</label> <!--name es para relacionar los radios-->
-            <label for="business-account">Business Account <input type="radio" name="account-type" id="business-account"> Business Account</label>
-            <label for="terms-and-condition"><input type="checkbox" required id="terms-and-condition"> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label> 
+            <label for="personal-account"><input type="radio" name="account-type" id="personal-account" class="inline"> Peronal Account</label> <!--name es para relacionar los radios-->
+            <label for="business-account"><input type="radio" name="account-type" id="business-account" class="inline"> Business Account</label>
+            <label for="terms-and-condition"><input type="checkbox" required id="terms-and-condition" class="inline"> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label> 
         </fieldset>
         <fieldset>
             <label for="profile-picture">Upload a profile picture<input type="file" id="profile-picture" name="file"></label>    <!--se utiliza for y id para vincular los elementos-->
