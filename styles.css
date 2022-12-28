@@ -38,4 +38,6 @@ input, textarea, select{
 }
 .inline{
     width: unset;
+    margin: 0 0.5em 0 0; /*left, right, top, bottom*/
+    vertical-align: middle;  /*alinia los checkbox y radio en medio*/
 }
