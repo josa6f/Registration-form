@@ -20,6 +20,7 @@ form{
     min-width: 300px;
     max-width: 500px;
     width: 60vw;
+    padding-bottom: 2em;
 }
 fieldset{
     border: 2rem;
@@ -35,9 +36,31 @@ input, textarea, select{
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
+    min-height: 2em;
 }
 .inline{
     width: unset;
     margin: 0 0.5em 0 0; /*left, right, top, bottom*/
     vertical-align: middle;  /*alinia los checkbox y radio en medio*/
+}
+input, textarea{
+    background-color: #0a0a23;
+    border: #0a0a23 solid 1px;
+    color: #ffffff;
+}
+input[type="submit"]{ /*se pone un selector especificando que etiqueta es y su atributo para poder ser modificado*/
+    display: block;
+    width: 60%;
+    margin: 1em auto 1em; 
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 60%;
+}
+input[type="file"]{
+    padding: 1px 2px;
+}
+a{
+    color: #dfdfe2;
 }
